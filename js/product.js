@@ -61,15 +61,17 @@ function showProduct(product) {
     ".productInfo .Price"
   ).textContent = `Price ${product.price}`;
 
-  document.querySelector(".dd1").textContent = `${product.id}`;
+  document.querySelector("dl dd:nth-child(2)").textContent = `${product.id}`;
 
   document.querySelector(".dd2").textContent = `${product.gender}`;
 
-  document.querySelector(".dd3").textContent = `${product.category}`;
+  document.querySelector(
+    "dl dd:nth-child(6)"
+  ).textContent = `${product.category}`;
 
-  document.querySelector(".dd4").textContent = `${product.basecolour}`;
+  document.querySelector(".dd4").textContent = product.basecolour;
 
-  document.querySelector(".dd5").textContent = `${product.description}`;
+  document.querySelector(".dd5").textContent = product.description;
 }
 
 // {
