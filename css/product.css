@@ -1,0 +1,8 @@
+#product {
+  padding-top: 40px;
+  grid-column: 4/10;
+}
+
+h2.productdisplayname {
+  padding: 20px 0 20px 0;
+}

@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
+
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/product.css">
 </head>
 
 <body>
@@ -12,7 +15,7 @@
     <header>
 
         <div id="logo">
-            <a href="index.html#">
+            <a href="../index.html">
                 <p class="logoP">ThatBrand</p>
             </a>
         </div>
@@ -20,21 +23,55 @@
         <div id="menu">
             <nav>
                 <ul>
-                    <li class="navItem1"><a href="index.html#">Frontpage</a></li>
-                    <li class="navItem2"><a href="pages/catagories.html">Catagories</a></li>
-                    <li class="navItem3"><a href="pages/productList.html">Products</a></li>
+                    <li class="navItem1"><a href="../index.html#">Frontpage</a></li>
+                    <li class="navItem2"><a href="catagories.html">Catagories</a></li>
+                    <li class="navItem3"><a href="productList.html">Products</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="overview">
-            <h1>Produckt</h1>
-            <template>
-                <p class="gender"></p>
+        <div id="product">
 
-            </template>
+
+
+            <img class="brandimage" src="" alt="">
+            <section class="productInfo">
+                <h2 class="productdisplayname">Cloths</h2>
+                <p class="brandname"></p>
+                <p class="Price"></p>
+
+                <form id="sizefitdesc">
+                    <label>Choose a size
+                        <select name="size">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </label>
+                </form>
+
+            </section>
+            <section class="generalInfo">
+                <dl>
+                    <dt class="idNumber">ID</dt>
+                    <dd class="dd1"></dd>
+                    <dt class="gender">Gender</dt>
+                    <dd class="dd2"></dd>
+                    <dt class="category">Category</dt>
+                    <dd class="dd3"></dd>
+                    <dt class="basecolour">Colour</dt>
+                    <dd class="dd4"></dd>
+                    <dt class="description">description</dt>
+                    <dd class="dd5"></dd>
+                </dl>
+                <p class="gender"></p>
+            </section>
+
+
+
         </div>
 
 
