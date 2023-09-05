@@ -1,4 +1,9 @@
-fetch("https://kea-alt-del.dk/t7/api/products")
+const urlParams = new URLSearchParams(window.location.search);
+let category = urlParams.get("category");
+if (!category) {
+  category = "Free items";
+}
+fetch("https://kea-alt-del.dk/t7/api/products?category=" + category)
   .then((response) => response.json())
   .then((data) => showProduct(data));
 
